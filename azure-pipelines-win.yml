@@ -1,0 +1,16 @@
+pool:
+  vmImage: windows-latest
+
+steps:
+
+- task: GetConjurSecret@1
+  inputs:
+    conjurApplianceURL: 'https://conjur-azure-devops.eastus.cloudapp.azure.com'
+    conjurAccount: 'conjur-azure'
+    conjurUsername: '${env:USERNAME}'
+    conjurAPIKey: '${env:API_KEY}'
+    ignoreSSL: true
+
+- powershell: |
+    "Secrets retrieved:"
+    $env:SECRET1

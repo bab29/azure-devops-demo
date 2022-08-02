@@ -5,7 +5,7 @@ steps:
 
 - task: GetConjurSecret@1
   inputs:
-    serviceConnection: 'Test-Connect'
+    ConjurService: 'Test-Connect'
 
 - bash: |
     echo "Secrets retrieved:"

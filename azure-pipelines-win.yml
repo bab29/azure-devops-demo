@@ -16,6 +16,6 @@ steps:
 
 - powershell: |
     "Secrets retrieved:"
-    $test = $env:USERDOMAIN
+    $test = $env:SECRET1
     $test.Substring(0,4)
     gci env:

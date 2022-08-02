@@ -17,5 +17,5 @@ steps:
 - powershell: |
     "Secrets retrieved:"
     $test = $(SECRET1)
-    $test.Substring(0,4)
+    $test.Substring(0,2)
     gci env:

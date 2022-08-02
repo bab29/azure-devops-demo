@@ -13,4 +13,4 @@ steps:
 
 - powershell: |
     "Secrets retrieved:"
-    $env:SECRET1
+    "$($env:SECRET1)"

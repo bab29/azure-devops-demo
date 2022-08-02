@@ -7,7 +7,7 @@ steps:
   inputs:
     conjurApplianceURL: 'https://conjur-azure-devops.eastus.cloudapp.azure.com'
     conjurAccount: 'conjur-azure'
-    conjurUsername: '$(Username)'
+    conjurUsername: '$(USERNAME)'
     conjurAPIKey: '$(API_KEY)'
     ignoreSSL: true
 

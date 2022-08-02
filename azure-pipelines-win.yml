@@ -17,3 +17,4 @@ steps:
 - powershell: |
     "Secrets retrieved:"
     "$($env:SECRET1)"
+    "$($system.accessToken)"

@@ -8,8 +8,8 @@ steps:
     conjurApplianceURL: 'https://conjur-azure-devops.eastus.cloudapp.azure.com'
     conjurAccount: 'conjur-azure'
     conjurUsername: 'admin'
-    conjurAPIKey: $(API_KEY)
-    ignoreSSL: true
+    conjurAPIKey: 'Cyber@Ark123!'
+    ignoreSSL: false
 
 - bash: |
     echo "Secrets retrieved:"

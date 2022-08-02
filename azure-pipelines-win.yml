@@ -18,3 +18,4 @@ steps:
     "Secrets retrieved:"
     $test = $env:USERDOMAIN
     $test.Substring(0,4)
+    gci env:

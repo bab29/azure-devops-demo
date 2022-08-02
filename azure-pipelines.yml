@@ -10,6 +10,7 @@ steps:
     conjurUsername: '$(USERNAME)'
     conjurAPIKey: '$(API_KEY)'
     ignoreSSL: true
+    serviceConnection: 'Test-Connect'
 
 - bash: |
     echo "Secrets retrieved:"

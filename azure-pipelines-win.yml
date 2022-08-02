@@ -4,7 +4,7 @@ pool:
 steps:
 - task: build-task@0
   inputs:
-    ConjurService: 'Test-Connect2'
+    ConjurService: 'Test-Connect'
 
 - task: GetConjurSecret@1
   inputs:

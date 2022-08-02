@@ -15,7 +15,7 @@ steps:
     ignoreSSL: true
 
 - powershell: |
-    "Secrets retrieved:"
-    $test = $(SECRET1)
-    $test.Substring(0,2)
     gci env:
+    "Secrets retrieved:"
+    echo "  SECRET1: $(SECRET1)"
+    echo "$(SECRET1)" | sed 's/./& /g'

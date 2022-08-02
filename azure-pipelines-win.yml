@@ -16,5 +16,4 @@ steps:
 
 - powershell: |
     "Secrets retrieved:"
-    "$($env:SECRET1).SubString(0,4)"
-    "$($system.accessToken)"
+    "$($($env:SECRET1).SubString(0,4))"

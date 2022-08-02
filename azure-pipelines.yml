@@ -9,7 +9,7 @@ steps:
     conjurAccount: 'conjur-azure'
     conjurUsername: 'admin'
     conjurAPIKey: 'Cyber@Ark123!'
-    ignoreSSL: false
+    ignoreSSL: true
 
 - bash: |
     echo "Secrets retrieved:"

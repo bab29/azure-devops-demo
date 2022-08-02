@@ -5,11 +5,11 @@ steps:
 
 - task: GetConjurSecret@1
   inputs:
-    conjurApplianceURL: 'https://conjur.joegarcia.dev'
-    conjurAccount: 'cyberarkdemo'
-    conjurUsername: 'host/cloud/azure/devops/pipeline-demo'
+    conjurApplianceURL: 'https://conjur-azure-devops.eastus.cloudapp.azure.com'
+    conjurAccount: 'conjur-azure'
+    conjurUsername: 'admin'
     conjurAPIKey: $(API_KEY)
-    ignoreSSL: false
+    ignoreSSL: true
 
 - bash: |
     echo "Secrets retrieved:"

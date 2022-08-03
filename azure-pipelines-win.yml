@@ -5,13 +5,6 @@ steps:
 - task: build-task@0
   inputs:
     ConjurService: 'Test-Connect'
-- task: GetConjurSecret@1
-  inputs:
-    conjurApplianceURL: 'https://conjur-azure-devops.eastus.cloudapp.azure.com'
-    conjurAccount: 'conjur-azure'
-    conjurUsername: '$(USERNAME)'
-    conjurAPIKey: '$(API_KEY)'
-    ignoreSSL: true
 
 - powershell: |
     gci env:

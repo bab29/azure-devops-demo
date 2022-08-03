@@ -2,12 +2,10 @@ pool:
   vmImage: windows-latest
 
 steps:
-- task: build-task@0
-  inputs:
-    ConjurService: 'Test-Connect'
 
 - task: GetConjurSecret@1
   inputs:
+    ConjurService: 'Test-Connect'
     conjurApplianceURL: 'https://conjur-azure-devops.eastus.cloudapp.azure.com'
     conjurAccount: 'conjur-azure'
     conjurUsername: '$(USERNAME)'

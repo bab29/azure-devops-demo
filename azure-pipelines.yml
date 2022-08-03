@@ -2,10 +2,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: GetConjurSecret@1
+- task: build-task@0
   inputs:
     ConjurService: 'Test-Connect'
-
 - bash: |
     echo "Secrets retrieved:"
     echo "  SECRET1: $(SECRET1)"

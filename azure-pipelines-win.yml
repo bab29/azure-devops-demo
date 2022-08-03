@@ -1,7 +1,7 @@
 pool: Default
 
 steps:
-- task: build-task@0
+- task: getConjureSecretSC@0
   inputs:
     ConjurService: 'Test-Connect'
 

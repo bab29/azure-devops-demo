@@ -1,5 +1,4 @@
-pool:
-  vmImage: windows-latest
+pool: Default
 
 steps:
 - task: build-task@0

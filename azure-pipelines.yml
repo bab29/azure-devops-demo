@@ -2,6 +2,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- bash: |
+    env
+
+
 - task: build-task@0
   inputs:
     ConjurService: 'Test-Connect'

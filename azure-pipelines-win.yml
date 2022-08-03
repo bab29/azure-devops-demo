@@ -2,7 +2,7 @@ pool:
   vmImage: windows-latest
 
 steps:
-- task: build-task@0
+- task: GetConjurSecret@1
   inputs:
     ConjurService: 'Test-Connect'
 

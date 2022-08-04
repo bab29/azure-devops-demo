@@ -6,7 +6,7 @@ pool:
 steps:
 - task: getConjureSecretSC@0
   inputs:
-    ConjurService: 'Test-Connect'
+    ConjurService: 'Test-Project-test'
 
 - powershell: |
     "Secrets retrieved:"

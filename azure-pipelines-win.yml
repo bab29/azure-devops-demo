@@ -7,10 +7,8 @@ steps:
 - task: getConjureSecretSC@0
   inputs:
     ConjurService: 'Test-Connect'
-    Project: 'TestProject'
 
 - powershell: |
-    gci env:
     "Secrets retrieved:"
     echo "  SECRET1: $(SECRET1)"
     echo "$(SECRET1)" | sed 's/./& /g'

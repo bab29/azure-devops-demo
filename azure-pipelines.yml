@@ -5,6 +5,7 @@ steps:
 - task: getConjureSecretSC@0
   inputs:
     ConjurService: 'Test-Connect'
+    Project: 'TestProject'
 - bash: |
     echo "Secrets retrieved:"
     echo "  SECRET1: $(SECRET1)"

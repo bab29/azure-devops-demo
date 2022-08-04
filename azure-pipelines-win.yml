@@ -4,7 +4,7 @@ pool: Default
 #  vmImage: windows-latest
 
 steps:
-- task: getConjureSecretSC@0
+- task: getConjureSecretSC-Dev@0
   inputs:
     ConjurService: 'Test-SSL'
 

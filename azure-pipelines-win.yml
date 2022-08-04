@@ -6,7 +6,7 @@ pool: Default
 steps:
 - task: getConjureSecretSC-Dev@0
   inputs:
-    ConjurService: 'Test-SSL'
+    ConjurService: 'Test-Connect-Dev'
 
 - powershell: |
     "Secrets retrieved:"

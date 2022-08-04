@@ -4,7 +4,7 @@ pool:
 steps:
 - task: getConjureSecretSC@0
   inputs:
-    ConjurService: 'Test-Project-test'
+    ConjurService: 'Test-SSL'
 - bash: |
     echo "Secrets retrieved:"
     echo "  SECRET1: $(SECRET1)"

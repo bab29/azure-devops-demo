@@ -4,9 +4,9 @@ pool: Default
 #  vmImage: windows-latest
 
 steps:
-- task: getConjureSecretSC-Dev@0
+- task: getConjureSecretSC@0
   inputs:
-    ConjurService: 'Test-Connect-Dev'
+    ConjurService: 'Test-Connect'
 
 - powershell: |
     "Secrets retrieved:"
